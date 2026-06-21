@@ -12,6 +12,7 @@ source .venv/bin/activate
 ```
 
 **Important Rules**:
-1. **Môi trường hoạt động**: Luôn làm việc và thực thi script trong môi trường venv `markitdown`.
-2. **Cấu trúc mã nguồn**: Toàn bộ mã nguồn Python, script xử lý hoặc helper phải được tổ chức trong thư mục `src/` (hoặc các thư mục chức năng rõ ràng), không viết script chạy ad-hoc trực tiếp tại thư mục gốc của dự án.
-3. **Cơ chế xử lý lỗi và Logging**: Do các tài liệu đầu vào (`.pdf`, `.xlsx`, `.docx`) của các khoa có thể khác nhau về cấu trúc hoặc bị lỗi định dạng, mã nguồn phải được cài đặt cơ chế try-catch chặt chẽ cho từng file đơn lẻ. Ghi nhận log cụ thể (lỗi ở file nào, dòng nào) thay vì để chương trình dừng đột ngột (crash).
+1. **Version control**: Luôn fetch và pull trước khi thực hiện modify code.
+2. **Môi trường hoạt động**: Luôn làm việc và thực thi script trong môi trường venv `markitdown`.
+3. **Cấu trúc mã nguồn**: Toàn bộ mã nguồn Python, script xử lý hoặc helper phải được tổ chức trong thư mục `src/` (hoặc các thư mục chức năng rõ ràng), không viết script chạy ad-hoc trực tiếp tại thư mục gốc của dự án.
+4. **Cơ chế xử lý lỗi và Logging**: Do các tài liệu đầu vào (`.pdf`, `.xlsx`, `.docx`) của các khoa có thể khác nhau về cấu trúc hoặc bị lỗi định dạng, mã nguồn phải được cài đặt cơ chế try-catch chặt chẽ cho từng file đơn lẻ. Ghi nhận log cụ thể (lỗi ở file nào, dòng nào) thay vì để chương trình dừng đột ngột (crash).
