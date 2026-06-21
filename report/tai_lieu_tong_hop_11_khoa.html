@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=initial-scale=1.0">
+    <title>Báo cáo tổng hợp NCKH và ĐMST Sinh viên 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --primary: #4f46e5;
+            --primary-glow: rgba(79, 70, 229, 0.05);
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --accent: #0284c7;
+            --accent-green: #10b981;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.02) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(2, 132, 199, 0.02) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Light card header */
+        header {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            text-align: center;
+        }
+        
+        header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 0 0 15px 0;
+            background: linear-gradient(135deg, #1e293b 30%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.3;
+        }
+        
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        /* Content area */
+        .content {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Typography custom styling */
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.7rem;
+            color: #0f172a;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+        
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #334155;
+        }
+        
+        strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: #334155;
+        }
+        
+        /* Table responsive light styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 0.95rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        
+        th {
+            background-color: rgba(79, 70, 229, 0.07);
+            color: #1e293b;
+            font-weight: 600;
+            text-align: left;
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f1f5f9;
+            color: #334155;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:hover td {
+            background-color: rgba(79, 70, 229, 0.02);
+            color: #0f172a;
+            transition: all 0.2s ease;
+        }
+        
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+        
+        /* Bold total row highlight */
+        tr:last-child {
+            font-weight: 700;
+            background-color: rgba(79, 70, 229, 0.07) !important;
+        }
+        tr:last-child td {
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BÁO CÁO TỔNG HỢP HOẠT ĐỘNG NCKH VÀ ĐMST SINH VIÊN 2026</h1>
+            <p>Trường Đại học Bách khoa - ĐHQG-HCM | Phòng Khoa học và Công nghệ</p>
+        </header>
+        <div class="content">
+            <h1>BÁO CÁO TỔNG HỢP HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC VÀ ĐỔI MỚI SÁNG TẠO CẤP SINH VIÊN CHÍNH QUY NĂM 2026</h1>
+<p><em>Lưu ý: Báo cáo được tổng hợp dựa trên kế hoạch và đề xuất thực tế từ 10 Khoa chuyên môn trực thuộc Trường Đại học Bách khoa - ĐHQG-HCM.</em></p>
+<hr />
+<h2>I. TỔNG QUAN VÀ KẾ HOẠCH TRIỂN KHAI CỦA CÁC KHOA</h2>
+<p>Dưới đây là tóm tắt định hướng và kế hoạch tổ chức hoạt động Nghiên cứu Khoa học và Đổi mới Sáng tạo (NCKH &amp; ĐMST) cấp sinh viên của 10 khoa chuyên môn thuộc trường trong chu kỳ 12 tháng (từ tháng 6/2026 đến tháng 5/2027):</p>
+<p><strong>1. Khoa Cơ khí</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Thí điểm mô hình tổ chức bài bản để nâng cao tỷ lệ tham gia NCKH của sinh viên, hình thành các nhóm nghiên cứu có định hướng chuyên môn kế thừa và có cơ chế ghi nhận xứng đáng cho giảng viên hướng dẫn (GVHD).</li>
+<li><strong>Lộ trình</strong>: Triển khai đề tài NCKH &amp; ĐMST thành 02 đợt. Xét duyệt đợt 1 vào tháng 7/2026 (nghiệm thu tháng 10/2026); đợt 2 xét duyệt tháng 11-12/2026 (nghiệm thu tháng 4/2027) và quyết toán toàn bộ vào tháng 5/2027.</li>
+</ul>
+<p><strong>2. Khoa Kỹ thuật Xây dựng</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Thúc đẩy sinh viên tham gia NCKH trên tất cả các hệ đào tạo (Tiêu chuẩn, Kỹ sư tài năng, PFIEV, Đào tạo Quốc tế OISP).</li>
+<li><strong>Lộ trình</strong>: Triển khai theo kế hoạch chung của Phòng KH&amp;CN. Tiếp nhận đề xuất từ tháng 6-7/2026, xét duyệt trong tháng 7/2026, thực hiện từ tháng 11/2026 đến tháng 11/2027 và nghiệm thu quyết toán vào tháng 11/2027.</li>
+</ul>
+<p><strong>3. Khoa Khoa học Ứng dụng</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Chia các nhóm nghiên cứu sinh viên thành 2 hình thức: Thực nghiệm chế tạo (Nhóm A) và Thuần túy mô phỏng tính toán (Nhóm B). Dành riêng 27,5 triệu đồng tổ chức Hội thảo khoa học sinh viên tại khoa để trưng bày, triển lãm sản phẩm.</li>
+<li><strong>Lộ trình</strong>: Thực hiện trong vòng 12 tháng theo quy trình chung của Nhà trường.</li>
+</ul>
+<p><strong>4. Khoa Kỹ thuật Giao thông</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Ưu tiên các đề tài có mục tiêu đầu ra kiểm chứng được (mô hình vật lý, thiết bị thử nghiệm về xe tự hành, hệ thống giao thông thông minh, hoặc phần mềm ứng dụng). Ưu tiên hỗ trợ sinh viên thực hiện học phần tốt nghiệp.</li>
+<li><strong>Lộ trình</strong>: Nhận hồ sơ đăng ký trước 31/07/2026, xét duyệt tháng 8/2026, thực hiện từ tháng 11/2026 đến tháng 11/2027 và thanh lý vào ngày 15/11/2027.</li>
+</ul>
+<p><strong>5. Khoa Kỹ thuật Địa chất &amp; Dầu khí</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Tập trung vào các đề tài nghiên cứu thực nghiệm cơ học đá, địa kỹ thuật và khảo sát thực địa đặc thù ngành. Sản phẩm kỳ vọng là các công bố quốc tế (tạp chí Scopus Q3).</li>
+<li><strong>Lộ trình</strong>: Thực hiện theo chu kỳ 6-12 tháng, ưu tiên mua sắm thiết bị chuyên dụng phục vụ đo đạc địa kỹ thuật từ đợt 1.</li>
+</ul>
+<p><strong>6. Khoa Công nghệ Vật liệu</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Khuyến khích các đề tài nghiên cứu chế tạo vật liệu mới (vật liệu nano oxit làm pin lithium-ion, màng polymer xuyên thấu, composite polymer sinh học tái tạo mô xương...).</li>
+<li><strong>Lộ trình</strong>: Bám sát quy trình mua sắm vật tư hóa chất nghiêm ngặt để đảm bảo tiến độ triển khai đề tài thực nghiệm 12 tháng.</li>
+</ul>
+<p><strong>7. Khoa Môi trường và Tài nguyên</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Triển khai các đề tài ứng dụng công nghệ hóa học - sinh học xử lý ô nhiễm nước thải, khí thải (sử dụng quá trình Fenton điện hóa, hoạt hóa peroxymonosulfate...).</li>
+<li><strong>Lộ trình</strong>: Bắt đầu triển khai từ tháng 8/2026 đến tháng 7/2027.</li>
+</ul>
+<p><strong>8. Khoa Khoa học &amp; Kỹ thuật Máy tính</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Đẩy mạnh các nhóm nghiên cứu sinh viên định hướng tạo ra công bố khoa học tại các hội nghị có phản biện thuộc IEEE/Springer/ACM hoặc Scopus Index; tham gia các cuộc thi công nghệ lớn (Robocon, Huawei ICT Competition...).</li>
+<li><strong>Lộ trình</strong>: Xét duyệt và mua sắm thiết bị trong tháng 8/2026, nghiệm thu và thanh lý vào tháng 5/2027.</li>
+</ul>
+<p><strong>9. Khoa Quản lý Công nghiệp</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Tập trung vào các đề tài ứng dụng thuật toán tối ưu (Heuristics, NSGA-II), mô phỏng chuỗi cung ứng, logistics đô thị, ứng dụng Machine Learning/Deep Learning trong dự báo nhu cầu doanh nghiệp.</li>
+<li><strong>Lộ trình</strong>: Triển khai đề tài trong chu kỳ 9-12 tháng bắt đầu từ tháng 9/2026.</li>
+</ul>
+<p><strong>10. Khoa Kỹ thuật Hóa học</strong></p>
+<ul>
+<li><strong>Mục tiêu</strong>: Thí điểm mô hình tổ chức NCKH bài bản 12 tháng (tháng 6/2026 - tháng 5/2027), nâng cao quy mô sinh viên tham gia nghiên cứu thực nghiệm hóa chất và thúc đẩy công bố khoa học.</li>
+<li><strong>Lộ trình</strong>: Thực hiện theo lộ trình 2 đợt tương tự Khoa Cơ khí, nghiệm thu và quyết toán dứt điểm vào tháng 5/2027.</li>
+</ul>
+<hr />
+<h2>II. THỐNG KÊ SỐ LƯỢNG ĐỀ TÀI VÀ SINH VIÊN THEO CHƯƠNG TRÌNH</h2>
+<p>Bảng dưới đây thống kê chi tiết số lượng đề tài, số lượng sinh viên tham gia phân bổ theo 4 chương trình đào tạo chính (Tiêu chuẩn, Kỹ sư tài năng - KSTN, Kỹ sư chất lượng cao Việt-Pháp - PFIEV, Đào tạo Quốc tế - OISP) và tổng kinh phí của các khoa:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">STT</th>
+<th style="text-align: left;">Tên Khoa</th>
+<th style="text-align: center;">Chương trình Tiêu chuẩn <br>(Đề tài / SV)</th>
+<th style="text-align: center;">Chương trình KSTN <br>(Đề tài / SV)</th>
+<th style="text-align: center;">Chương trình PFIEV <br>(Đề tài / SV)</th>
+<th style="text-align: center;">Chương trình OISP <br>(Đề tài / SV)</th>
+<th style="text-align: center;">Tổng số Đề tài</th>
+<th style="text-align: center;">Tổng số Sinh viên</th>
+<th style="text-align: center;">Tổng Kinh phí <br>(Triệu VNĐ)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Khoa Cơ khí</td>
+<td style="text-align: center;">45-55 / 160-250</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;"><strong>45 - 55</strong></td>
+<td style="text-align: center;"><strong>160 - 250</strong></td>
+<td style="text-align: center;"><strong>1.118,80</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Kỹ thuật Xây dựng</td>
+<td style="text-align: center;">20 / 60</td>
+<td style="text-align: center;">5 / 15</td>
+<td style="text-align: center;">10 / 30</td>
+<td style="text-align: center;">10 / 30</td>
+<td style="text-align: center;"><strong>45</strong></td>
+<td style="text-align: center;"><strong>135</strong></td>
+<td style="text-align: center;"><strong>440,60</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Khoa học Ứng dụng</td>
+<td style="text-align: center;">4 / 16</td>
+<td style="text-align: center;">13 / 18</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">4 / 9</td>
+<td style="text-align: center;"><strong>21</strong></td>
+<td style="text-align: center;"><strong>43</strong></td>
+<td style="text-align: center;"><strong>168,40</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Kỹ thuật Giao thông</td>
+<td style="text-align: center;">10 / -</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">10 / -</td>
+<td style="text-align: center;">10 / -</td>
+<td style="text-align: center;"><strong>30</strong></td>
+<td style="text-align: center;"><strong>140</strong></td>
+<td style="text-align: center;"><strong>152,60</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Kỹ thuật Địa chất &amp; Dầu khí</td>
+<td style="text-align: center;">3 / 22</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>263,55</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Công nghệ Vật liệu</td>
+<td style="text-align: center;">11 / 11</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">6 / 12</td>
+<td style="text-align: center;">2 / 5</td>
+<td style="text-align: center;"><strong>19</strong></td>
+<td style="text-align: center;"><strong>28</strong></td>
+<td style="text-align: center;"><strong>94,70</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Môi trường và Tài nguyên</td>
+<td style="text-align: center;">6 / 14</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">4 / 10</td>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;"><strong>24</strong></td>
+<td style="text-align: center;"><strong>27,40</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">Khoa học &amp; KT Máy tính</td>
+<td style="text-align: center;">- / 70-100</td>
+<td style="text-align: center;">- / -</td>
+<td style="text-align: center;">- / -</td>
+<td style="text-align: center;">- / -</td>
+<td style="text-align: center;"><strong>-</strong></td>
+<td style="text-align: center;"><strong>70 - 100</strong></td>
+<td style="text-align: center;"><strong>1.096,50</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">Quản lý Công nghiệp</td>
+<td style="text-align: center;">11 / 31</td>
+<td style="text-align: center;">7 / 16</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">14 / 24</td>
+<td style="text-align: center;"><strong>32</strong></td>
+<td style="text-align: center;"><strong>71</strong></td>
+<td style="text-align: center;"><strong>Chưa rõ</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Kỹ thuật Hóa học</td>
+<td style="text-align: center;">30-50 / 200-300</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;">0 / 0</td>
+<td style="text-align: center;"><strong>30 - 50</strong></td>
+<td style="text-align: center;"><strong>200 - 300</strong></td>
+<td style="text-align: center;"><strong>848,70</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><strong>TỔNG CỘNG</strong></td>
+<td style="text-align: center;"><strong>140+ / 574+</strong></td>
+<td style="text-align: center;"><strong>25+ / 49</strong></td>
+<td style="text-align: center;"><strong>26 / 72</strong></td>
+<td style="text-align: center;"><strong>44 / 78</strong></td>
+<td style="text-align: center;"><strong>235+</strong></td>
+<td style="text-align: center;"><strong>973+</strong></td>
+<td style="text-align: center;"><strong>4.311,25</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Ghi chú</em>:
+* Các ô có ký tự <code>-</code> biểu thị thông tin chưa được phân rã chi tiết trong kế hoạch gửi về của khoa.
+* Tổng kinh phí chưa tính kinh phí của Khoa Quản lý Công nghiệp (do khoa chưa gửi con số phân bổ cụ thể).
+* Số lượng đề tài/sinh viên của Khoa Cơ khí và Kỹ thuật Hóa học được tính theo định biên mục tiêu tối thiểu.</p>
+<hr />
+<h2>III. KẾ HOẠCH MUA SẮM NGUYÊN VẬT LIỆU, LINH KIỆN VÀ HÓA CHẤT</h2>
+<p>Các đề tài NCKH sinh viên phần lớn đều có nhu cầu mua sắm vật tư, linh kiện, hóa chất phục vụ cho thực nghiệm và chế tạo mô hình. Dưới đây là tổng hợp nhu cầu kinh phí và danh mục mua sắm tiêu biểu:</p>
+<h3>1. Tổng hợp kinh phí mua sắm theo đề xuất của các khoa</h3>
+<ul>
+<li><strong>Khoa Cơ khí</strong>: Dự kiến dành <strong>670 triệu đồng</strong> (chiếm 60% tổng kinh phí được phân bổ) cho công tác mua sắm vật tư, linh kiện và gia công chế tạo.</li>
+<li><strong>Khoa Khoa học &amp; Kỹ thuật Máy tính</strong>: Dự kiến dành <strong>596 triệu đồng</strong> (chiếm 54% tổng kinh phí) cho mua sắm thiết bị phần cứng, linh kiện điện tử và bản quyền phần mềm nghiên cứu.</li>
+<li><strong>Khoa Kỹ thuật Hóa học</strong>: Dự kiến dành <strong>500 triệu đồng</strong> (chiếm 60% tổng kinh phí) cho hóa chất tinh khiết, dụng cụ thủy tinh phòng thí nghiệm và thiết bị phụ trợ.</li>
+<li><strong>Khoa Kỹ thuật Địa chất &amp; Dầu khí</strong>: Đăng ký danh mục mua sắm chi tiết trị giá <strong>263,55 triệu đồng</strong>.</li>
+<li><strong>Khoa Công nghệ Vật liệu</strong>: Đăng ký danh mục mua sắm chi tiết trị giá <strong>112,05 triệu đồng</strong>.</li>
+<li><strong>Khoa Môi trường và Tài nguyên</strong>: Đăng ký danh mục mua sắm chi tiết trị giá <strong>67,27 triệu đồng</strong> (Trường duyệt phân bổ thực tế là 27,4 triệu đồng).</li>
+</ul>
+<h3>2. Danh mục mua sắm tiêu biểu của các nhóm nghiên cứu</h3>
+<ul>
+<li><strong>Vật tư cơ khí, điện tử và tự động hóa (Khoa Cơ khí, Giao thông, Máy tính)</strong>:</li>
+<li>Linh kiện điện tử: Vi điều khiển (ESP32, Arduino), cảm biến (cảm biến khoảng cách, cảm biến lực, IMU), mạch driver động cơ, module GPS, camera nhận diện hình ảnh.</li>
+<li>Vật liệu cơ khí: Nhôm định hình, thép tấm, nhựa in 3D chuyên dụng, sợi carbon, composite chịu lực chế tạo vỏ khung xe tự hành và drone.</li>
+<li><strong>Hóa chất và vật liệu sinh học (Khoa Kỹ thuật Hóa học, Công nghệ Vật liệu, Môi trường)</strong>:</li>
+<li>Hóa chất phân tích &amp; tổng hợp xúc tác: KOH, PVA, NaOH, H₂SO₄, HNO₃, Ethanol nguyên chất, Nafion, niken nitrat, amoni molybdat, sắt sunfat.</li>
+<li>Thiết bị phụ trợ thí nghiệm: Điện cực glassy carbon, màng bọc cao su chịu hóa chất, giấy lọc dầu, ống ly tâm siêu tốc, bóp cao su 3 van kháng hóa chất.</li>
+<li><strong>Thành phần thiết bị đo lường chuyên dụng (Khoa Địa chất &amp; Dầu khí, Khoa học Ứng dụng)</strong>:</li>
+<li>Ống kính macro chuyên dụng đo biến dạng mẫu đá, đèn flash công suất lớn, tripod chịu tải cao.</li>
+<li>Thiết bị đo sinh tồn (PPG), linh kiện lắp ráp hệ thống robot 6 bậc tự do.</li>
+</ul>
+<hr />
+<h2>IV. ĐỊNH HƯỚNG CÔNG BỐ KHOA HỌC VÀ BÁO CÁO HỘI NGHỊ, HỘI THẢO</h2>
+<p>Công bố khoa học và tham gia các cuộc thi học thuật là sản phẩm đầu ra bắt buộc của hoạt động NCKH &amp; ĐMST sinh viên năm 2026:</p>
+<h3>1. Định hướng xuất bản bài báo khoa học</h3>
+<ul>
+<li><strong>Khoa KH&amp;KT Máy tính</strong>: Định hướng bài báo được chấp nhận đăng tại các hội thảo/hội nghị uy tín thuộc danh mục IEEE, Springer, ACM; tạp chí thuộc danh mục Scopus hoặc tạp chí chuyên ngành được Hội đồng Chức danh Giáo sư Nhà nước (HDCDGSNN) tính điểm.</li>
+<li><strong>Khoa Kỹ thuật Địa chất &amp; Dầu khí</strong>: Cam kết đầu ra gồm ít nhất 01 bài báo tạp chí quốc tế thuộc danh mục Scopus Q3 và 01 báo cáo tại Hội nghị khoa học quốc tế.</li>
+<li><strong>Khoa Quản lý Công nghiệp</strong>: Định hướng bài báo đăng tại các tạp chí trong danh mục HDCDGSNN, kỷ yếu hội nghị quốc tế và tạp chí Scopus Q4.</li>
+<li><strong>Khoa Công nghệ Vật liệu &amp; Kỹ thuật Hóa học</strong>: Bài báo gửi đăng tạp chí chuyên ngành trong nước/quốc tế và báo cáo poster tại Ngày hội kỹ thuật cấp khoa.</li>
+</ul>
+<h3>2. Tổng hợp kinh phí dành cho Hội nghị, Hội thảo (HN, HT)</h3>
+<ul>
+<li><strong>Khoa KH&amp;KT Máy tính</strong>: Dành riêng <strong>410 triệu đồng</strong> (~37% tổng kinh phí) để tài trợ chi phí đăng bài báo, lệ phí hội nghị và chi phí đi lại, ăn ở cho sinh viên báo cáo.</li>
+<li><strong>Khoa Kỹ thuật Hóa học</strong>: Dành <strong>265 triệu đồng</strong> (~30% tổng kinh phí) hỗ trợ sinh viên công bố khoa học và đăng ký tham dự hội nghị.</li>
+<li><strong>Khoa Cơ khí</strong>: Dành <strong>112 triệu đồng</strong> (~10% tổng kinh phí) hỗ trợ chi phí đăng bài và hội thảo khoa học liên quan trực tiếp đến đề tài.</li>
+<li><strong>Khoa Khoa học Ứng dụng</strong>: Dành <strong>27,5 triệu đồng</strong> từ nguồn phân bổ để tổ chức riêng Hội thảo khoa học sinh viên tại khoa phục vụ báo cáo và triển lãm.</li>
+</ul>
+<hr />
+<h2>V. TỔNG HỢP CÁC ĐỀ XUẤT VÀ KIẾN NGHỊ CỦA CÁC KHOA</h2>
+<p>Để hoạt động NCKH &amp; ĐMST cấp sinh viên năm 2026 đạt hiệu quả thực chất, các khoa đã đưa ra một số đề xuất quan trọng gửi Phòng Khoa học &amp; Công nghệ, Phòng Kế hoạch - Tài chính và Ban Giám hiệu Trường:</p>
+<h3>1. Đề xuất về cơ chế tài chính mới (Khoa Cơ khí, Hóa học)</h3>
+<ul>
+<li><strong>Bồi dưỡng sinh viên</strong>: Đề nghị nhà trường cho phép áp dụng định mức bồi dưỡng cho sinh viên trực tiếp thực hiện đề tài (dự kiến chiếm ≈15% giá trị đề tài) nhằm tạo động lực nghiên cứu.</li>
+<li><strong>Chi phí khảo sát thực địa</strong>: Đề xuất xây dựng định mức chi phí đi lại, khảo sát và thu thập số liệu thực địa cho sinh viên (dự kiến chiếm ≈10% kinh phí phân bổ), đặc biệt cần thiết cho các đề tài ngành Địa chất, Dầu khí, Môi trường.</li>
+</ul>
+<h3>2. Đề xuất quy trình và biểu mẫu mua sắm (Khoa KHUD, Giao thông, Máy tính)</h3>
+<ul>
+<li><strong>Quy trình mua sắm</strong>: Đề nghị Phòng KH&amp;CN và Phòng Quản trị Thiết bị hướng dẫn chi tiết quy trình mua sắm đối với các hóa chất thí nghiệm (đặc biệt là hóa chất độc hại, hóa chất thuộc danh mục kiểm soát), linh kiện điện tử chuyên dụng nhập khẩu và các phần mềm bản quyền nghiên cứu.</li>
+<li><strong>Quy trình giải ngân</strong>: Đề nghị nhà trường hỗ trợ thủ tục lập dự toán nhanh chóng, rút ngắn thời gian mua sắm bàn giao vật tư (hiện tại quy trình thông thường mất khoảng 30 ngày) để tránh làm gián đoạn tiến độ thực hiện đề tài của sinh viên.</li>
+</ul>
+<h3>3. Đề xuất hỗ trợ giảng viên hướng dẫn (Khoa Cơ khí, KH&amp;KTMT, KTHH)</h3>
+<ul>
+<li><strong>Ghi nhận công sức</strong>: Đề xuất Phòng KH&amp;CN ban hành hướng dẫn chi tiết quy trình tính điểm Nhiệm vụ 2 (quy đổi giờ chuẩn giảng dạy) và kinh phí bồi dưỡng hướng dẫn cho giảng viên hướng dẫn đề tài NCKH sinh viên để đảm bảo quyền lợi và khuyến khích thầy/cô đồng hành cùng sinh viên.</li>
+</ul>
+<h3>4. Hỗ trợ tham gia cuộc thi ngoài trường (Khoa Cơ khí, KTHH)</h3>
+<ul>
+<li><strong>Kết nối thủ tục</strong>: Đề xuất Phòng Công tác Sinh viên (CTSV) hỗ trợ tối đa quy trình tiếp nhận hồ sơ hỗ trợ sinh viên tham gia các cuộc thi học thuật ngoài trường (theo quy trình BK-QT-ED-056-05) nhằm tạo cơ hội cọ xát thực tế cho sinh viên sau khi hoàn thành đề tài cấp cơ sở.</li>
+</ul>
+        </div>
+        <footer>
+            <p>© 2026 Trường Đại học Bách khoa - ĐHQG-HCM. Thiết kế bởi Antigravity AI Agent.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+# Báo cáo kiểm toán processed_md
+
+- Thời điểm: 2026-06-21T18:29:19
+- Tổng file gốc: 12
+- Tóm tắt trạng thái: {'major': 11, 'ok': 1}
+
+## Kết quả chi tiết
+
+### 2026.06.05_To trinh_NCKHSV_KhoaCoKhi_2026_v1.signed.pdf
+
+- Markdown: `2026.06.05_To trinh_NCKHSV_KhoaCoKhi_2026_v1.signed.md`
+- Loại: `pdf`
+- Trạng thái: `major`
+- Metrics: `{"pages": 5, "chars": 11873, "covered_pages_text": 1, "page_text_coverage": 0.2, "rendered_images": 5, "table_rows": 38, "table_separator_rows": 4}`
+- Findings:
+  - **major**: Text coverage PDF thấp; cần đối chiếu ảnh trang vì có thể thiếu bảng/cột/nội dung.
+    - III. MỤC TIÊU CỦA KẾ HOẠCH THÍ ĐIỂM 3.1. Mục tiêu chung • Thiết lập quy trình tổ chức NCKH sinh viên có thể lặp lại và chuẩn hóa từ năm 2027. • Huy động đông đảo giảng viên tham...
+    - • Khoa đề cử danh sách cán bộ tham gia Hội đồng xét duyệt và nghiệm thu gửi P.KH&CN (mẫu BM03.1, BM03.2/RD-008-08). • Theo dõi tiến độ định kỳ; báo cáo P.KH&CN theo mẫu BM07/RD-...
+    - Thời gian Nội dung công việc Kết quả/Đầu ra T5/2027 Quyết toán toàn bộ kinh phí; báo cáo kết quả (BM09/RD-008-08); đề xuất kế hoạch năm tiếp theo Báo cáo tổng kết + đề xuất VI. ...
+    - TT Hạng mục Dự kiến (tr.đ) Ghi chú 5 Dự phòng phát sinh ≈ 57 Phần còn lại TỔNG 1.118,8 (*) Khoản bồi dưỡng sinh viên (~15% giá trị đề tài) và chi phí hoạt động khảo sát (~10% tổ...
+
+### 20260615 - Kế hoạch triển khai đề tài NCKH SV.pdf
+
+- Markdown: `20260615 - Kế hoạch triển khai đề tài NCKH SV.md`
+- Loại: `pdf`
+- Trạng thái: `major`
+- Metrics: `{"pages": 2, "chars": 1967, "covered_pages_text": 0, "page_text_coverage": 0.0, "rendered_images": 2, "table_rows": 18, "table_separator_rows": 2}`
+- Findings:
+  - **major**: Text coverage PDF thấp; cần đối chiếu ảnh trang vì có thể thiếu bảng/cột/nội dung.
+    - TRƯỜNG ĐẠI HỌC BÁCH KHOA CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM KHOA KỸ THUẬT XÂY DỰNG Độc lập – Tự do – Hạnh phúc Số: 178/KTXD TP. Hồ Chí Minh, ngày 15 tháng 06 năm 2026 Kế hoạch t...
+    - III. Số lượng đề tài và sinh viên tham gia dự kiến Chương trình Số lượng đề tài Số lượng SV Kinh phí phân bổ Tiêu chuẩn 20 60 93.300.000 Kỹ sư tài năng 5 15 231.500.000 Chất lượ...
+
+### BM Ke hoach NCKH SV 2026_KHUD_V3 (1).docx
+
+- Markdown: `BM Ke hoach NCKH SV 2026_KHUD_V3 (1).md`
+- Loại: `docx`
+- Trạng thái: `major`
+- Metrics: `{"source_blocks": 70, "covered_blocks": 41, "coverage": 0.586, "table_rows": 41, "table_separator_rows": 5}`
+- Findings:
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung từ DOCX.
+    - TRƯỜNG ĐẠI HỌC BÁCH KHOA KHOA KHOA HỌC ỨNG DỤNG | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc Thành phố Hồ Chí Minh, ngày 11 tháng 6 năm 2026
+    - Cụ thể: sinnh viên chương trình tiêu chuẩn, chương trình quốc tế OISP (dạy và học bằng tiếng Anh, định hướng Nhật Bản), chương trình kỹ sư tài năng.
+    - 1 | Nghiên cứu chế tạo và đánh giá đặc tính hóa lý của viên cầu composite PVA/Gelatin/Apatite | Nguyễn Hoàng Khang Huỳnh Thị Ngọc Hân Nguyễn Huy Thùy Trân | 01 bài báo tham gia ...
+    - 2 | Phân tích ảnh hưởng của kích thích âm nhạc lên não bộ sử dụng tín hiệu điện não đồ và thuật toán học máy tăng cường | Nguyễn Huỳnh Tấn Đức Dương Quang Minh | 01 bài báo tham...
+    - 3 | Định vị UAV trong môi trường GNSS hạn chế bằng thị giác máy tính và kiểm chứng hình học | Khưu Huỳnh Gia Hưng Tiệu Thiên Ân Nguyễn Minh Quang Võ Nguyễn Bảo Ngọc Phạm Gia Hưn...
+    - 4 | Nghiên cứu, xây dựng và ứng dụng thuật toán hỗ trợ phục hồi ngôn ngữ. | Phạm Lê Quỳnh Như Nguyễn Trung Nam Nguyễn Thị Thanh Ngân Huỳnh Đinh Phúc Hào Ngô Tuấn Anh Nguyễn Phạm...
+    - Tổng cộng | 22.120.000
+    - 1 | Nghiên cứu ảnh hưởng của cấu hình khuyết tật ban đầu và điều kiện môi trường đến sự nứt gãy do giòn hydro bằng phương pháp đẳng hình học trường pha | Ngô Duy Trung (KSTN) | ...
+    - 2 | Khảo sát ảnh hưởng của các tham số hình học và hướng chịu tải đến hành vi cơ tính đàn hồi của các cấu trúc auxetic 2D dưới tải trọng nén chuẩn tĩnh | Phạm Ngọc Thịnh (KSTN) ...
+    - 3 | Mô hình hóa và mô phỏng ứng xử kết cấu khung drone trên môi trường kỹ thuật số | Phạm Trung Kiên Cao Thị Thanh Thảo Huỳnh Minh Nhật | 01 bài báo tham gia Hội nghị khoa học |...
+    - 4 | Nghiên cứu ứng xử động lực học và phát triển thuật toán giảm rung cho tay máy robot 6 bậc tự do. | Nguyễn Huỳnh Nhật Huy Lê Nguyễn Quang Huy Trần Gia Huy | 01 bài báo tham g...
+    - 5 | Thiết kế - mô phỏng và thử nghiệm kết cấu mềm | Nguyễn Thái Khánh Linh | 01 bài báo tham gia Hội nghị khoa học | 5.000.000 (hội nghị)
+
+### Bảng tổng hợp đề xuất nckh sv_KHUD_2026_V3 (1).xlsx
+
+- Markdown: `Bảng tổng hợp đề xuất nckh sv_KHUD_2026_V3 (1).md`
+- Loại: `xlsx`
+- Trạng thái: `major`
+- Metrics: `{"sheets": {"Tieu chuan": {"shape": [33, 14], "non_empty_cells": 115}, "KSTN": {"shape": [45, 15], "non_empty_cells": 234}, "OISP": {"shape": [42, 15], "non_empty_cells": 163}}, "total_non_empty_cells": 512, "covered_cells": 197, "coverage": 0.895, "table_rows": 123, "table_separator_rows": 3}`
+- Findings:
+  - **minor**: Một số ô Excel có xuống dòng nhưng chưa thấy dạng <br> tương ứng trong Markdown.
+    - '- Xác định ảnh hưởng của biến dạng lớn đến điện áp được tạo ra trong vật liệu áp điện và ngược lại. - Khảo sát dao động phi tuyến trong tấm vật liệu áp điện. - Xây dựng quy trì...
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung ô từ bảng Excel.
+    - BẢNG TỔNG HỢP ĐỀ XUẤT HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC SINH VIÊN
+    - Chương trình (TC/PFIEV/KSTN/OISP)
+    - Nguyễn Hoàng Khang Huỳnh Thị Ngọc Hân Nguyễn Huy Thùy Trân
+    - Nguyễn Huỳnh Tấn Đức Dương Quang Minh
+    - Khưu Huỳnh Gia Hưng Tiệu Thiên Ân Nguyễn Minh Quang Võ Nguyễn Bảo Ngọc Phạm Gia Hưng
+    - Linh kiện nhúng trên UAV
+    - Phạm Lê Quỳnh Như Nguyễn Trung Nam Nguyễn Thị Thanh Ngân Huỳnh Đinh Phúc Hào Ngô Tuấn Anh Nguyễn Phạm Diễm Vy
+    - Phạm Trung Kiên Cao Thị Thanh Thảo Huỳnh Minh Nhật
+    - Nguyễn Huỳnh Nhật Huy Lê Nguyễn Quang Huy Trần Gia Huy
+    - Vương Quốc Việt Trần Anh Khoa
+    - - Tìm được sự phân bố tối ưu của các pha vật liệu trong kết cấu. - Xác định được các cấu hình tối ưu tương ứng với những ràng buộc thể tích thành phần khác nhau. - Đưa ra được m...
+    - - Tính toán lực tiếp xúc, lực ma sát giữa hai bề mặt vật thể. - Xây dựng chương trình con với mô hình mài mòn phù hợp cho tính toán. - Tính toán khối lượng, thể tích vật liệu bị...
+    - - Phân tích phi tuyến biến dạng lớn của kết cấu tấm mỏng. - Sử dụng phần tử MITC4+ để loại bỏ hiện tượng khoá cắt (shear locking) và khoá màng (membrane locking) trong tính toán...
+    - - Chế tạo một nguyên mẫu bộ thu năng lượng từ các tấm vật liệu áp điện. - Khảo sát hiệu ứng áp điện trong các môi trường cơ-điện và cơ-nhiệt-điện.
+    - Lê Minh Quân Mai Xuân Minh Đào Lê Anh Khoa
+    - - Tính toán lực tiếp xúc, lực va chạm giữa các vật thể. - Khảo sát sự bảo toàn năng lượng của cơ hệ khi xảy ra va chạm.
+    - Nguyễn Lê Hoàng Quân Nguyễn Duy Quang
+    - '- Xác định ảnh hưởng của biến dạng lớn đến điện áp được tạo ra trong vật liệu áp điện và ngược lại. - Khảo sát dao động phi tuyến trong tấm vật liệu áp điện. - Xây dựng quy trì...
+    - Dương Khánh Toàn Lê Tiến Long
+    - - Mô phỏng sự lan truyền và phân nhánh của vết nứt trong vật liệu đồng nhất đẳng hướng đàn hồi tuyến tính. - Xây dựng một quy trình phân tích dựa trên mô hình hư hỏng liên tục k...
+
+### KTGT_KE HOACH TRIEN KHAI DE TAI NCKH SINH VIEN NAM 2026 LTHien revised.docx
+
+- Markdown: `KTGT_KE HOACH TRIEN KHAI DE TAI NCKH SINH VIEN NAM 2026 LTHien revised.md`
+- Loại: `docx`
+- Trạng thái: `major`
+- Metrics: `{"source_blocks": 43, "covered_blocks": 23, "coverage": 0.535, "table_rows": 31, "table_separator_rows": 4}`
+- Findings:
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung từ DOCX.
+    - TRƯỜNG ĐẠI HỌC BÁCH KHOA | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+    - KHOA KỸ THUẬT GIAO THÔNG | Độc lập – Tự do – Hạnh phúc
+    - Số: 49/KH-KTGT | Thành phố Hồ Chí Minh, ngày 12 tháng 6 năm 2026
+    - TT | Sinh viên thuộc chương trình | Kinh phí duyệt năm 2026 (VNĐ)
+    - Số lượng đề tài tham gia: trung bình 10 đề tài/1 chương trình với tổng số sinh viên: 140
+    - Thời gian thực hiện đề tài: từ tháng 11/2026 – 11/2027
+    - Sản phẩm đề tài: Khoa ưu tiên các đề tài có mục tiêu rõ ràng, phù hợp năng lực sinh viên, có giảng viên hướng dẫn chịu trách nhiệm chuyên môn và có sản phẩm đầu ra kiểm chứng đư...
+    - Hồ sơ và báo cáo khoa học: Thuyết minh được phê duyệt, báo cáo tổng kết
+    - Sản phẩm học thuật: báo cáo tại hội nghị sinh viên nghiên cứu khoa học hoặc bài báo; khuyến khích công bố nhưng không bắt buộc.
+    - Sản phẩm công nghệ / thực nghiệm: Các mô hình, thiết bị vật lý hoặc các phần mềm ứng dụng trong lĩnh vực phương tiện giao thông;
+    - Giải thưởng: Thành tích từ các cuộc thi học thuật các cấp;
+    - Giai đoạn | Nội dung công việc | Thời hạn hoàn thành
+
+### KTĐC-DK_Kế hoạch HĐ NCKH & ĐMST cấp SV năm 2026 (1).xlsx
+
+- Markdown: `KTĐC-DK_Kế hoạch HĐ NCKH & ĐMST cấp SV năm 2026 (1).md`
+- Loại: `xlsx`
+- Trạng thái: `major`
+- Metrics: `{"sheets": {"Kế hoạch hoạt động NCKH SV_2026": {"shape": [37, 12], "non_empty_cells": 195}}, "total_non_empty_cells": 195, "covered_cells": 77, "coverage": 0.939, "table_rows": 38, "table_separator_rows": 1}`
+- Findings:
+  - **minor**: Một số ô Excel có xuống dòng nhưng chưa thấy dạng <br> tương ứng trong Markdown.
+    - Trường Đại học Bách Khoa Khoa Kỹ thuật Địa chất và Dầu khí
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung ô từ bảng Excel.
+    - KẾ HOẠCH HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC VÀ ĐỔI MỚI SÁNG TẠO CẤP SINH VIÊN NĂM 2026 (Theo thông báo số 172/TB-ĐHBK, ngày 31/5/2026, vv phân bổ kinh phí và kế hoạch triển khai Nghi...
+    - Chương trình (TC/OISP)
+    - Các sản phẩm KHCN dự kiến (bài báo, tham gia các cuộc thi học thuật, báo cáo khoa học,…)
+    - 2 đến 3 sinh viên 1. Nguyễn Lâm Gia Khánh - MSSV 2411525 2. Lê Quang Đạt - MSSV 2210679
+    - TỔNG: 1.600.000-2.400.000đ Phí tham dự hội nghị/hội thảo: 500.000-1.000.000d ; Phí đi lại nội địa tham dự HN/HT: 600.000-800.000d Phí lưu trú: 500.000-600.000d
+
+### Khoa CNVL_ Danh sách đăng ký NCKH-ĐMST-2026-16.06.2026.xlsx
+
+- Markdown: `Khoa CNVL_ Danh sách đăng ký NCKH-ĐMST-2026-16.06.2026.md`
+- Loại: `xlsx`
+- Trạng thái: `major`
+- Metrics: `{"sheets": {"Tiêu chuẩn": {"shape": [15, 9], "non_empty_cells": 112}, "OISP": {"shape": [5, 9], "non_empty_cells": 31}, "PFIEV": {"shape": [9, 9], "non_empty_cells": 67}}, "total_non_empty_cells": 210, "covered_cells": 70, "coverage": 0.753, "table_rows": 32, "table_separator_rows": 3}`
+- Findings:
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung ô từ bảng Excel.
+    - Kinh phí (triệu đồng)
+    - Thời gian thực hiện
+    - Nguyễn Thị Huỳnh Hoa Nguyễn Tấn Đạt Ông Hoàng Phúc
+    - Kiều Xuân Bách Nguyễn Ngọc Thanh Ngân
+    - Vũ Thế Bách Dương Thảo Vi
+    - Nguyễn Hữu Quốc Bảo Nguyễn Thọ Thành Nguyễn Khắc Mạnh Quỳnh Lê Trọng Hiếu Nguyễn Quỳnh Trúc My
+    - Võ Thành Duy Anh Nguyễn Minh Khôi Võ Nhật Minh Duy La Thế Trân
+    - Ông Hoàng Phúc Trần Anh Khoa Nguyễn Tấn Thống
+    - Lê Đông Hải Võ Đào Bảo Trân Trần Kim Ngân
+    - 01 Poster báo cáo tham gia Ngày hội Nhập môn Kỹ thuật Khoa Công nghệ Vật liệu năm học 2026-2027. - 01 Poster báo cáo tham gia Hội nghị Quốc tế được tổ chức tại Việt Nam trong nă...
+    - Võ Ngọc Hân Huỳnh Mai Gia Linh
+    - - 01 màng polymer có cấu trúc xuyên thấu -01 mẫu điện cực truyền sáng, 01 Poster tham gia Ngày hội nhập môn kỹ thuật năm 2026-2027 - 01 Poster tham gia Hội nghị trong nước.
+    - Vũ Thế Bách Dương Thảo Vi Bùi Đình Gia Bảo
+    - Nguyễn Thị Dạ Uyên Bùi Nguyễn Anh Kha
+    - Hồ Thanh Hoài Nhân Đào Chí Quân
+    - Nguyễn Hoàng Minh Khôi Nguyễn Duy Quý Lê Trung Huy Vũ Mạnh Quốc
+    - Lê Thị Xuân Đài Nguyễn Cao Bảo Khang
+    - - 02 màng Composite ZSM-5/Chitosan có kích thước 2.5x2.5cm - 01 Poster báo cáo Hội thảo trong nước hoặc tại Trường ĐHBK - 01 bản đăng ký dự thi đề tài nghiên cứu khoa học sinh v...
+    - Lê Song Hào Dương Gia Nghi
+    - Trần Ngọc Phương Thùy Hồ Hữu An
+
+### Khoa CNVL_Kế hoạch mua sắm nguyên vật liệu, linh kiện, hóa chất-16.06.2026-P.KHCN.xls
+
+- Markdown: `Khoa CNVL_Kế hoạch mua sắm nguyên vật liệu, linh kiện, hóa chất-16.06.2026-P.KHCN.md`
+- Loại: `xls`
+- Trạng thái: `major`
+- Metrics: `{"sheets": {"BANG KE VAT TU": {"shape": [193, 6], "non_empty_cells": 1105}}, "total_non_empty_cells": 1105, "covered_cells": 217, "coverage": 0.861, "table_rows": 194, "table_separator_rows": 1}`
+- Findings:
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung ô từ bảng Excel.
+    - TÊN VẬT TƯ, HÓA CHẤT SỬ DỤNG NGHIÊN CỨU (thông tin sơ bộ)
+    - Khối lượng tịnh (Net): 500 g/chai Dạng bao bì: chai nhựa HDPE màu trắng Cấp hóa chất: AR (Analytical Reagent) dùng cho phân tích phòng thí nghiệm.
+    - Khối lượng tịnh (Net): 1000ml/chai Dạng bao bì: chai nhựa HDPE màu trắng
+    - NH3 amoniac_NH4OH_Amoniac (Ammonia solution) 500ML
+    - Khối lượng tịnh (Net): 500ml/chai Dạng bao bì: chai nhựa HDPE màu trắng Cấp hóa chất: AR (Analytical Reagent) dùng cho phân tích phòng thí nghiệm.
+    - Nhựa in 3D SLA; dạng rắn Đóng gói 1kg/túi.
+    - Cồn PVA; dạng lỏng. Đóng gói 1L/chai
+    - Mỡ bôi trơn; dạng lỏng nhớt. Đóng gói 85/chai
+    - Kiềm cắt mẫu từ máy in 3D SLA Đóng gói 1 cái
+    - Màng FEP cho máy in 3D SLA; Đóng gói 1 cái
+    - Đèn LED UV đóng rắn nhựa; Đóng gói 1 cái
+    - Hộp (100 chiếc)
+    - Túi (50 cái)
+    - Hộp (500 chiếc)
+    - Chai (100 g)
+    - Chai (1 kg)
+    - Chai (500 mL)
+    - Túi (1 kg)
+    - Chloroform; dạng lỏng; Độ tinh khiết ≥ 99%, đóng gói 500 ml/chai.
+    - Methanol; dạng lỏng; Độ tinh khiết ≥ 99%, đóng gói 500 ml/chai.
+
+### Kế hoạch hoạt động NCKH và ĐMST sinh viên 2026_K.MTTN.xlsx
+
+- Markdown: `Kế hoạch hoạt động NCKH và ĐMST sinh viên 2026_K.MTTN.md`
+- Loại: `xlsx`
+- Trạng thái: `major`
+- Metrics: `{"sheets": {"Tổng hợp": {"shape": [8, 6], "non_empty_cells": 21}, "Chi tiết": {"shape": [110, 15], "non_empty_cells": 617}}, "total_non_empty_cells": 638, "covered_cells": 150, "coverage": 0.852, "table_rows": 120, "table_separator_rows": 2}`
+- Findings:
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung ô từ bảng Excel.
+    - KẾ HOẠCH HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC VÀ ĐỔI MỚI SÁNG TẠO CẤP SINH VIÊN (Theo thông báo số 172/TB-ĐHBK, ngày 31/5/2026, vv phân bổ kinh phí và kế hoạch triển khai Nghiên cứu Kh...
+    - Chương trình (TC/PFIEV/KSTN/OISP)
+    - Số tiền đăng ký (VNĐ)
+    - Đề tài 1: GVHD: Lê Thị Huỳnh Trâm - 7.105.680 VNĐ Đề tài 2: GVHD: Lê Thị Huỳnh Trâm - 7.552.800 VNĐ Đề tài 4: GVHD: Trần Đoan Trang - 7.000.000 VNĐ Đề tài 5: GVHD: Phan Thanh Lâ...
+    - Đề tài 3: GVHD: Lê Thị Huỳnh Trâm - 7.612.960 VNĐ Đề tài 6: GVHD: Phan Thanh Kim Loan - 9.000.000 VNĐ Đề tài 7: GVHD: Lâm Phạm Thanh Hiền - 7.000.000 VNĐ Đề tài 8: GVHD: Trần Đo...
+    - Sản phẩm KHCN dự kiến (bài báo, tham gia các cuộc thi học thuật, báo cáo khoa học,…)
+    - Đơn giá (VNĐ)
+    - 14 = 12 * 13
+    - Pipet man 1mL _(Micropipet 100 - 1000ul)
+    - Chất liệu: Nhựa polypropylene tinh khiết 100% Hộp 96 cái Có thể hấp bằng nồi hấp nhiệt ướt
+    - Nhiệt độ sôi: 335 °C (1013 hPa) Khối lượng riêng: 1.84 g/cm3 (20 °C) Nhiệt độ nóng chảy: -20 °C pH: 0.3 (49 g/l, H₂O, 25 °C) Áp suất hóa hơi: 0.0001 hPa (20 °C)
+    - - Chất lỏng trong suốt - Nhiệt độ nóng chảy: 42,35°C - Nhiệt độ sôi: 158°C - Độ hòa tan trong nước: 369.4 g/100 mL
+    - Cas 15244-10-7 Dạng bột tinh thể màu trắng hoặc vàng nhạt hoặc hồng nhạt
+    - Cas: 10043-35-3 Dạng tinh thể màu trắng
+    - cas: 10102-17-7 Nhiệt độ nóng chảy: 48.3oC Nhiệt độ sôi: 100oC
+    - MW (NH4)6Mo7O24·4H2O = 1235.86 Dạng tinh thể màu trắng
+    - Cas: 7778-80-5 Dạng tinh thể màu trắng
+    - Cas 7758-99-8 Dạng bột tinh thể màu xanh dương
+    - Phân loại 3 van: ngắn / dài - Chất liệu: cao su kháng hóa chất màu đỏ - Thiết kế ba van, dễ dàng thao tác và sử dụng - Để hút, phân phối chính xác các loại chất lỏng, hóa chất k...
+    - Chất liệu: Nhựa polypropylene tinh khiết 100% Có thể hấp bằng nồi hấp nhiệt ướt
+
+### Kế hoạch thực hiện hoạt động NCKH SV năm 2026_K. KH-KTMT.docx
+
+- Markdown: `Kế hoạch thực hiện hoạt động NCKH SV năm 2026_K. KH-KTMT.md`
+- Loại: `docx`
+- Trạng thái: `major`
+- Metrics: `{"source_blocks": 59, "covered_blocks": 49, "coverage": 0.831, "table_rows": 26, "table_separator_rows": 5}`
+- Findings:
+  - **major**: Thiếu hoặc biến đổi đáng kể nội dung từ DOCX.
+    - TRƯỜNG ĐẠI HỌC BÁCH KHOA KHOA KH&KT MÁY TÍNH | CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập – Tự do – Hạnh phúc
+    - Số: | Thành phố Hồ Chí Minh, ngày tháng năm 2026
+    - Thời gian | Nội dung công việc
+    - Tháng 6/2026 | - Xây dựng kế hoạch – Xin ý kiến – Được phê duyệt - Ban hành kế hoạch; - Thông báo đến GV và SV
+    - STT | Hạng mục | Dự kiến (triệu đồng) | Ghi chú
+    - TỔNG | 1.096,5
+    - - Ban Chủ nhiệm Khoa chỉ đạo và giám sát việc triển khai kế hoạch.
+    - - Giảng viên hướng dẫn hỗ trợ chuyên môn, theo dõi tiến độ và đánh giá kết quả nghiên cứu.
+    - - Sinh viên thực hiện đề tài theo đúng kế hoạch đã được phê duyệt và tuân thủ các quy định hiện hành.
+    - Nơi nhận: - Như trên; -Lưu VT | TRƯỞNG KHOA
+
+### QLCN_Kế hoạch hoạt động NCKH và ĐMST sinh viên thuộc Khoa (2026)_v 12.6.2026 (1).xlsx
+
+- Markdown: `QLCN_Kế hoạch hoạt động NCKH và ĐMST sinh viên thuộc Khoa (2026)_v 12.6.2026 (1).md`
+- Loại: `xlsx`
+- Trạng thái: `ok`
+- Metrics: `{"sheets": {"Sheet1": {"shape": [34, 12], "non_empty_cells": 396}}, "total_non_empty_cells": 396, "covered_cells": 80, "coverage": 0.964, "table_rows": 35, "table_separator_rows": 1}`
+- Findings: không phát hiện lỗi bằng kiểm tra tự động.
+
+### To trinh_NCKHSV_Khoa KTHH_2026.signed.pdf
+
+- Markdown: `To trinh_NCKHSV_Khoa KTHH_2026.signed.md`
+- Loại: `pdf`
+- Trạng thái: `major`
+- Metrics: `{"pages": 5, "chars": 10733, "covered_pages_text": 0, "page_text_coverage": 0.0, "rendered_images": 5, "table_rows": 35, "table_separator_rows": 4}`
+- Findings:
+  - **major**: Text coverage PDF thấp; cần đối chiếu ảnh trang vì có thể thiếu bảng/cột/nội dung.
+    - TRƯỜNG ĐẠI HỌC BÁCH KHOA CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM KHOA KỸ THUẬT HÓA HỌC Độc lập – Tự do – Hạnh phúc Số: 182/TTr-KTHH Thành phố Hồ Chí Minh, ngày 11 tháng 6 năm 2026 TỜ...
+    - III. MỤC TIÊU CỦA KẾ HOẠCH 3.1. Mục tiêu chung  Thiết lập quy trình tổ chức NCKH sinh viên có thể lặp lại và chuẩn hóa từ năm 2027.  Huy động đông đảo giảng viên tham gia hướn...
+    - • Khoa đề cử danh sách cán bộ tham gia Hội đồng xét duyệt và nghiệm thu gửi P.KH&CN (mẫu BM03.1, BM03.2/RD-008-08). • Theo dõi tiến độ định kỳ; báo cáo P.KH&CN theo mẫu BM07/RD-...
+    - T5/2027 Quyết toán toàn bộ kinh phí; báo cáo kết quả (BM09/RD-008-08); đề xuất kế hoạch năm tiếp theo Báo cáo tổng kết + đề xuất VI. CƠ CHẾ MUA SẮM VẬT TƯ VÀ THIẾT BỊ Toàn bộ ho...
+    - Kinh phí hỗ trợ sinh viên tham gia cuộc thi học thuật ngoài trường không tính vào nguồn này – sinh viên nộp hồ sơ tại P.CTSV theo quy trình BK-QT-ED-056-05. Trường hợp phát sinh...
