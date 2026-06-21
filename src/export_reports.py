@@ -16,6 +16,82 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+LATEX_UNICODE_REPLACEMENTS = {
+    "≈": r"\(\approx\)",
+    "≤": r"\(\leq\)",
+    "≥": r"\(\geq\)",
+    "°": r"\(^\circ\)",
+    "₂": r"$_2$",
+    "₃": r"$_3$",
+    "₄": r"$_4$",
+    "₅": r"$_5$",
+    "₆": r"$_6$",
+    "₇": r"$_7$",
+    "₈": r"$_8$",
+    "₉": r"$_9$",
+    "₀": r"$_0$",
+}
+
+
+def sanitize_latex_unicode(text):
+    """Normalize Unicode symbols that pdflatex/inputenc does not define."""
+    for source, replacement in LATEX_UNICODE_REPLACEMENTS.items():
+        text = text.replace(source, replacement)
+    return text
+
+
+def sanitize_latex_longtable(text):
+    """Normalize Pandoc table output for pdflatex stability."""
+    text = text.replace(
+        "{\\def\\LTcaptype{none} % do not increment counter\n\\begin{longtable}",
+        "\\begin{longtable}",
+    )
+    text = text.replace("\\bottomrule\\noalign{}\n\\endlastfoot", "\\endlastfoot")
+    text = re.sub(r"(\\end\{longtable\})\n\}\n", r"\1\n", text)
+    text = text.replace("\\begin{longtable}[]{", "\\begin{center}\n\\scriptsize\n\\begin{tabular}{")
+    text = text.replace("\\endhead\n", "")
+    text = text.replace("\\endlastfoot\n", "")
+    text = text.replace("\\end{longtable}", "\\end{tabular}\n\\end{center}")
+    return text
+
+
+def add_latex_table_borders(text):
+    """Add simple visible borders to generated tabular environments."""
+    lines = text.splitlines()
+    output = []
+    in_tabular = False
+    in_tabular_spec = False
+
+    for line in lines:
+        if "\\scriptsize" in line:
+            output.append(line)
+            output.append("  \\setlength{\\arrayrulewidth}{0.4pt}")
+            continue
+
+        if "\\begin{tabular}{@{}" in line:
+            line = line.replace("\\begin{tabular}{@{}", "\\begin{tabular}{|")
+            in_tabular = True
+            in_tabular_spec = True
+
+        if in_tabular_spec and "@{}}" in line:
+            line = line.replace("@{}}", "|}")
+            in_tabular_spec = False
+
+        if in_tabular_spec and "\\arraybackslash}p{" in line and not line.rstrip().endswith("|"):
+            line = line.replace("\\linewidth - 16\\tabcolsep", "\\linewidth - 22\\tabcolsep")
+            line = f"{line}|"
+
+        line = line.replace("\\toprule\\noalign{}", "\\hline")
+        line = line.replace("\\midrule\\noalign{}", "\\hline")
+        if in_tabular and line.rstrip().endswith("\\\\"):
+            line = f"{line} \\hline"
+        if "\\end{tabular}" in line:
+            in_tabular = False
+
+        output.append(line)
+
+    return "\n".join(output) + "\n"
+
 # Thử import pypandoc và markdown
 try:
     import pypandoc
@@ -330,6 +406,9 @@ def main():
         
         # Convert sang latex body
         latex_body = pypandoc.convert_text(clean_md, 'latex', format='md')
+        latex_body = sanitize_latex_unicode(latex_body)
+        latex_body = sanitize_latex_longtable(latex_body)
+        latex_body = add_latex_table_borders(latex_body)
         
         latex_template = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
