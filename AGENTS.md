@@ -20,3 +20,10 @@ source .venv/bin/activate
    * **Đối với tài liệu `.docx`**: Tuyệt đối không dùng list numbering tự động của markdown (như các dòng bắt đầu bằng `1. ` liên tục) vì parser sẽ tự reset số thứ tự khi gặp đoạn văn đứt quãng. Bắt buộc viết số thứ tự cứng cố định dạng in đậm (ví dụ: `**1. Mục tiêu**`, `**2. Tiến độ**`, `**5.1. Bối cảnh**`).
    * **Đối với tài liệu `.xlsx`/`.xls`**: Loại bỏ triệt để các ô rác chứa `NaN` và `Unnamed: X`. Thay thế các ký tự xuống dòng `\n` trong ô bảng thành thẻ `<br>` để tránh vỡ cấu trúc cột của bảng biểu Markdown.
    * **Đối với tài liệu `.pdf`**: Luôn sử dụng thư viện `pypdfium2` để render các trang PDF thành ảnh PNG lưu trong `files_images/`, sau đó dùng ảnh này để đối chiếu trực quan và khôi phục các cấu trúc bảng biểu, cột bị vỡ khi chuyển đổi.
+
+## Tiến độ dự án (Project Progress)
+
+* **Stage 1: Convert sang Markdown (Raw Markdown)**: **[Đã hoàn thành]** - Chuyển đổi thành công 12 tài liệu gốc trong `files/` thành raw markdown tại `raw_md/`.
+* **Stage 2: Clean Markdown (Processed Markdown)**: **[Đã hoàn thành]** - Làm sạch và chuẩn hóa lỗi chính tả, bảng biểu trong `processed_md/` dựa trên rà soát và đối chiếu visual.
+* **Stage 3: Align Layout (Final Markdown)**: **[Đã hoàn thành]** - Đồng bộ hóa 12 file Markdown từ `processed_md/` sang `./final_md/` làm tài liệu đệm dữ liệu đầu vào.
+* **Stage 4: Đóng gói và xuất bản (Report Export)**: **[Đã hoàn thành]** - Xây dựng script `src/export_reports.py` tổng hợp toàn diện thông tin từ 10 khoa thực tế và xuất bản tự động ra 4 định dạng (.md, .docx, .html, .tex) trong thư mục `report/`.

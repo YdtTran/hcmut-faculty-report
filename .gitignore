@@ -144,9 +144,9 @@ Thumbs.db
 
 # Project-specific temporary/data directories
 /raw_md/
-/processed_md/
-/final_md/
-/report/
+# /processed_md/
+# /final_md/
+# /report/
 /files/
 /files_images/
 
